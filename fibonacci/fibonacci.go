@@ -11,7 +11,7 @@ func ParseIndex(i string) (string, error) {
 		return "", fmt.Errorf("error in parsing the input. (err: %v)", err)
 	}
 	x, y := 0, 1
-	for j := 0; j <= n; j++{
+	for j := 0; j < n; j++{
 		x, y = y, x + y
 	}
 	return strconv.Itoa(x), nil
